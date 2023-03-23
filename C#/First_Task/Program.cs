@@ -9,8 +9,10 @@
 
 Console.Clear();
 Console.Write("Enter number:");
-int number = int.Parse(Console.Readline());
-inr sqr = number * number;
+int number = int.Parse(Console.ReadLine());
+int sqr = number * number;
 Console.WriteLine($"Quader number {number} equivalent {sqr}");
 int sqrl = Convert.ToInt32(Math.Pow(number, 3));
 Console.WriteLine($"Quader number {number} equivalent {sqr}");
+
+

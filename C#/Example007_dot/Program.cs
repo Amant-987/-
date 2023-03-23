@@ -24,7 +24,7 @@ while (count < 10)
     if (what == 0)
     {
         x = (x+xa) / 2;
-        y = (y + ya) / 2;    
+        y = (y + ya) / 2;
         }
 
     if (what == 1)
