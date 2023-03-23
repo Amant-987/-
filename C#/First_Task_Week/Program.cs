@@ -25,4 +25,6 @@ if (a == 7) {
 if (a > 7) {
     Console.Write("В недели 7 дней");
 }
-Console.ReadLine
+
+Console.ReadLine()
+
