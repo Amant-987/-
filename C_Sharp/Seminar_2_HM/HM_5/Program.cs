@@ -7,6 +7,5 @@
 Console.Clear();
 Console.Write("Enter a three-digit number: ");
 int num = int.Parse(Console.ReadLine());
-int a = num % 100;
-int b = a / 10;
-Console.WriteLine($"{num} -> {b}");
+int a = (num % 100) / 10;
+Console.WriteLine($"{num} -> {a}");
