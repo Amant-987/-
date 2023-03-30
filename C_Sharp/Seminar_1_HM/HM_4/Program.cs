@@ -5,7 +5,7 @@
 
 Console.Clear();
 Console.Write("n: ");
-int n - int.Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine());
 
 for (int i = 2; i < n +1; i = i + 2) {
     Console.Write($"{i}");
