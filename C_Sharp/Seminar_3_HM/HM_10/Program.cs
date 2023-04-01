@@ -10,7 +10,7 @@ for (int i=1; i < num + 1; i++)
 {
     if(i!=num)
 {
-    Console.Write(Math.Pow(i,3)+", ");
+    Console.Write(Math.Pow(i,3)+" , ");
         }
     else
     {
