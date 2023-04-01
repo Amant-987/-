@@ -30,9 +30,9 @@ Console.Clear();
         }
         static void WriteInFile(String Write_anagr)
        {
-           StreamWriter writer = new System.IO.StreamWriter(anagram, true, Encoding.UTF8);
-           writer.WriteLine(Write_anagr);
-           writer.Close();
+           //StreamWriter writer = new System.IO.StreamWriter(anagram, true, Encoding.UTF8);
+           //writer.WriteLine(Write_anagr);
+           //writer.Close();
        }
         static void Main()
         {
