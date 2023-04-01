@@ -1,0 +1,1 @@
+explorer https://github.com/Amant-987/HM_C_Sharp/tree/main/First_Seminar
