@@ -20,7 +20,7 @@ if (num == a)
 }
 else
 {
-        Console.Write("This isn't a Palindrom!");
+    Console.Write("This isn't a Palindrom!");
 }
 
 //Console.Write(a);
