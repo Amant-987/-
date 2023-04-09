@@ -3,10 +3,34 @@
 
 [-4, -8, 8, 2] -> [4, 8, -8, -2]  String.Join(", ", array)*/
 
-int[] array = { -4, -8, 8, 2 };
-for (int i = 0; i < array.Length; i++)
+int[] Startarray = GetArray(6, -9, 10);
+Console.WriteLine(String.Join(", ", Startarray));
+InversArray(Startarray);
+Console.WriteLine(String.Join(", ", Startarray));
+int[] GetArray(int size, int minvalue, int maxvalue)
 {
-    array[i] = array[i] * -1;
-
+    int[] res = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        res[i] = new Random().Next(minvalue, maxvalue + 1);
+    }
+    return res;
 }
-Console.Write(String.Join(", ", array));
+int[] InversArray(int[] Startarray)
+{
+    int[] result = new int[Startarray.Length];
+    for (int j = 0; j < Startarray.Length; j++)
+        result[j] = Startarray[j];
+    for (int i = 0; i < Startarray.Length; i++)
+    {
+        Startarray[i] = Startarray[i] * -1;
+        //array[i] *= -1;
+
+    }
+    return result;
+}
+
+
+// //foreach(var it in array.Select((e, i) => new { Value = e, Index = i })){
+//     Console.WriteLine("Element " + it.Value + " present at index " + it.Index);
+// }
