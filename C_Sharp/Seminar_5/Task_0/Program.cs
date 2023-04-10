@@ -1,4 +1,17 @@
-﻿int[] SumPosNeg(int[] array)
+﻿int[] array = getarray(10, -20, 20);
+Console.WriteLine(string.Join(", ", array));
+
+int[] getarray(int size, int minv, int maxv)
+{
+    int[] a = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        a[i] = new Random().Next(minv, maxv + 1);
+    }
+    return a;
+}
+
+int[] SumPosNeg(int[] array)
 {
     int[] result = new int[2];
     foreach (int el in array)//[1, 2, 3, 4, -5, 1, -3] el = -5
