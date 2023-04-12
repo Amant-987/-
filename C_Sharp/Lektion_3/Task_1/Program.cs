@@ -17,7 +17,7 @@ void Method2(string msg)
     Console.WriteLine(msg);
 }
 Method2("Author Amant - method2");
-//or ethod2(msg: "Author Amant - method2"); - when input not only one
+//or Method2(msg: "Author Amant - method2"); - when input not only one
 
 void Method22(string msg, int count)
 {
