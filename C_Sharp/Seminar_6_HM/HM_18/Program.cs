@@ -11,8 +11,8 @@
 Console.WriteLine("Enter 4 numbers with space between it(b1,k1,b2,k2): ");
 string[] array = Console.ReadLine().Split(' ');
 double b1 = double.Parse(array[0]);
-double k1 = double.Parse(array[2]);
-double b2 = double.Parse(array[1]);
+double k1 = double.Parse(array[1]);
+double b2 = double.Parse(array[2]);
 double k2 = double.Parse(array[3]);
 
 void Formula(double b1, double k1, double b2, double k2)
@@ -26,7 +26,7 @@ void Formula(double b1, double k1, double b2, double k2)
         Console.WriteLine($"y={y}");
         Console.WriteLine(String.Join("; ", x, y));
         Console.WriteLine();
-        
+
         //second variation
         double x2 = (b1 - b2) / (k2 - k1);
         Console.WriteLine($"x2={x2}");
@@ -36,4 +36,4 @@ void Formula(double b1, double k1, double b2, double k2)
     }
 }
 
-Formula(b1, b2, k1, k2);
+Formula(b1, k1, b2, k2);
