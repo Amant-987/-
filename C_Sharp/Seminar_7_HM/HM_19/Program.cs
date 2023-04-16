@@ -10,12 +10,10 @@
 using System;
 using static System.Console;
 
-Clear();
-
-Write("Enter number of rows array (m): ");
+Write("Enter number of rows array: ");
 int rows = int.Parse(ReadLine()!);
 
-Write("Enter number of columns array (n): ");
+Write("Enter number of columns array: ");
 int columns = int.Parse(ReadLine()!);
 
 double[,] array = GetArray(rows, columns);
@@ -30,7 +28,7 @@ double[,] GetArray(int m, int n)
         for (int j = 0; j < n; j++)
         {
             //result[i, j] = new Random().NextDouble() * 10;
-            result[i, j] = Math.Round(new Random().Next(-50, 50) / 1.5, 1);
+            result[i, j] = Math.Round(new Random().Next(-30, 50) / 2.5, 2);
         }
     }
     return result;
