@@ -9,7 +9,11 @@
 using System;
 using static System.Console;
 
-int[,] array = GetArray(4, 3, 0, 10);
+int a = new Random().Next(2, 7); //rows
+int b = new Random().Next(4, 8); //columns
+int c = new Random().Next(1, 5); //minValue
+int d = new Random().Next(10, 20); //maxValue
+int[,] array = GetArray(a, b, c, d);
 PrintArray(array);
 
 int[,] GetArray(int rows, int columns, int minVal, int maxValue)
