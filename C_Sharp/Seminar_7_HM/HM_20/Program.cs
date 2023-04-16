@@ -8,6 +8,7 @@
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
+
 using System;
 using static System.Console;
 WriteLine("Enter number to find: ");

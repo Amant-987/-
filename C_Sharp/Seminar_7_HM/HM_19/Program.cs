@@ -40,7 +40,7 @@ void PrintArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            //Write("{0,6:F2}", array[i, j]); // {0,6:F2} - format numbers in writeline
+            //Write("{0,7:F2}", array[i, j]); // {0,6:F2} - format numbers in writeline
             Write(array[i, j] + "\t"); // \t - tab. If the compiler encounters the sequence \t in the text, it will not see the sequence as a slash and the letter t, but as a tab - i.e. a long indent.
         }
         WriteLine();
