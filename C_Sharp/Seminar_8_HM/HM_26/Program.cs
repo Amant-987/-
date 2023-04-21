@@ -82,4 +82,34 @@ internal class Program
         }
 
         //second try GetSpiralArray------ONLY QUADRATISH---------->
+        int[,] GetSpiral2(int[,] result)
+        {
+            int temp = 1;
+            int i = 0;
+            int j = 0;
+            while (temp <= result.GetLength(0) * result.GetLength(1))
+            {
+                result[i, j] = temp;
+                temp++;
+                if (i <= j + 1 && i + j < result.GetLength(1) - 1)
+                    j++;
+                else if (i < j && i + j >= result.GetLength(0) - 1)
+                    i++;
+                else if (i >= j && i + j > result.GetLength(1) - 1)
+                    j--;
+                else
+                    i--;
+            }
+            return result;
+        }
+
+
+        //third try GetSpiralArray------ONLY QUADRATISH---------->
         
+        
+
+
+
+        
+    }
+}
