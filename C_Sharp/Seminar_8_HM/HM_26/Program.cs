@@ -8,71 +8,78 @@
 using System;
 using static System.Console;
 
-int row_col = /*4;*/ new Random().Next(3,10);
-int[,] array = GetSpiralArray(row_col);
-int[,] array2 = new int [row_col,row_col];
-//Spiral(array2);
-WriteLine();
-PrintArray(array);
-
-
-
-void PrintArray(int[,] array)
+internal class Program
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    private static void Main(string[] args)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Write(array[i, j]+"\t");
-        }
+        int row_col = /*4;*/ new Random().Next(3, 10);
+
+        int[,] array = GetSpiralArray(row_col);
+        int[,] array2 = new int[row_col, row_col];
+        GetSpiral2(array2);
         WriteLine();
-    }
-}
+        WriteLine();
+        PrintArray(array2);
+        WriteLine();
+        //PrintArray(array1);
 
-//Переименую)
-//first try GetSpiralArray---------------->
-int[,] GetSpiralArray(int a) //a = numbers of row == numbers of column
-{
-    int[,] result = new int[a, a];
-    int i = 0;
-    int j = 0;
-    int temp = 1; //first number for massive
-    while (a != 0) //a=size   Rename it
-    {
-        int k = 0;
-        do
+
+        void PrintArray(int[,] array)
         {
-            result[i, j++] = temp++; //insrease number for every column in that row
-        } while (++k < a - 1); //while prefix k < then length-1
-        for (k = 0; k < a - 1; k++)
-        {
-            result[i++, j] = temp++;
-            //insrease number for every row in that column
-        }
-        for (k = 0; k < a - 1; k++)
-        {
-            result[i, j--] = temp++;
-            //decrease number for every column(postfix - reverse course) in that row
-        }
-        for (k = 0; k < a - 1; k++)
-        {
-            result[i--, j] = temp++;
-            //decrease number for every row(postfix - reverse course) in that column
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Write(array[i, j] + "\t");
+                }
+                WriteLine();
+            }
         }
 
-        ++i; //++ as prefix - new round
-        ++j;
-        if (a < 2)
-        {
-            a = 0;
-        }
-        else
-        {
-            a -= 2;
-        }
-    }
-    return result;
-}
 
-//second try GetSpiralArray цшер кусгкышщт---------------->
-//Пока нет мыслей для второго варианта - сегодня сяду делать)  - у меня нет.     Я хочу через рекурсию придумать решение
+        //first try GetSpiralArray------ONLY QUADRATISH---------->
+        int[,] GetSpiralArray(int size) //a = result of row == result of column
+        {
+            int[,] result = new int[size, size];
+            int i = 0;
+            int j = 0;
+            int temp = 1; //first number for massive
+            while (size != 0)
+            {
+                int k = 0;
+                do
+                {
+                    result[i, j++] = temp++; //insrease number for every column in that row
+                } while (++k < size - 1); //while prefix k < then length-1
+                for (k = 0; k < size - 1; k++)
+                {
+                    result[i++, j] = temp++;
+                    //insrease number for every row in that column
+                }
+                for (k = 0; k < size - 1; k++)
+                {
+                    result[i, j--] = temp++;
+                    //decrease number for every column(postfix - reverse course) in that row
+                }
+                for (k = 0; k < size - 1; k++)
+                {
+                    result[i--, j] = temp++;
+                    //decrease number for every row(postfix - reverse course) in that column
+                }
+
+                ++i; //++ as prefix - new round
+                ++j;
+                if (size < 2)
+                {
+                    size = 0;
+                }
+                else
+                {
+                    size -= 2;
+                }
+            }
+            return result;
+        }
+
+        //second try GetSpiralArray------ONLY QUADRATISH---------->
+        
