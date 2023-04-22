@@ -32,7 +32,7 @@ internal class Program
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    Write(array[i, j] + "\t");
+                    Write($"{array[i, j]:00}"+"\t");
                 }
                 WriteLine();
             }
