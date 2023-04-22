@@ -16,10 +16,12 @@ internal class Program
 
         int[,] array = GetSpiralArray(row_col);
         int[,] array2 = new int[row_col, row_col];
+        int[,] array3 = new int[new Random().Next(3,6),new Random().Next(4,7)];
         GetSpiral2(array2);
+        SpiralArray(array3);
         WriteLine();
         WriteLine();
-        PrintArray(array2);
+        PrintArray(array3);
         WriteLine();
         //PrintArray(array1);
 
@@ -104,12 +106,37 @@ internal class Program
         }
 
 
-        //third try GetSpiralArray------ONLY QUADRATISH---------->
-        
-        
+        //third try GetSpiralArray-------------->
 
+        void SpiralArray(int[,] array)
+        {
+            var total = array.GetLength(0) * array.GetLength(1);
+            var numb = 1;
 
+            int X = 0;
+            int Y = 0;
 
-        
+            int h = array.GetLength(0); //height
+            int w = array.GetLength(1);  //weight
+
+            while (total >= numb)
+            {
+                for (int i = 0; i < w; i++)
+                    array[X, Y + i] = numb++;
+
+                for (int i = 1; i < h; i++)
+                    array[X + i, Y + w - 1] = numb++;
+
+                for (int i = 1; i < w && numb <= total; i++)
+                    array[X + h - 1, (Y + w - 1) - i] = numb++;
+
+                for (int i = 1; i < h - 1 && numb <= total; i++)
+                    array[(X + h - 1) - i, Y] = numb++;
+                X++;
+                Y++;
+                h -= 2;
+                w -= 2;
+            }
+        }
     }
 }
