@@ -8,16 +8,16 @@
 using System;
 using static System.Console;
 
-int n = new Random().Next(3,20);
-int m = 1;
+int Num = new Random().Next(3,20);
+int count = 1;
 
-Console.WriteLine(NaturalNumber(n, m));
+WriteLine(NaturalNumber(Num, count));
 
 int NaturalNumber(int n, int m)
 {
     if (n == m)
         return n;
     else
-        Console.Write($"{NaturalNumber(n, m + 1)}, ");
+        Write($"{NaturalNumber(n, m + 1)}, ");
     return m;
 }
