@@ -1,0 +1,15 @@
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\bin\Debug\net6.0\task_1.exe
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\bin\Debug\net6.0\task_1.deps.json
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\bin\Debug\net6.0\task_1.runtimeconfig.json
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\bin\Debug\net6.0\task_1.dll
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\bin\Debug\net6.0\task_1.pdb
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.csproj.AssemblyReference.cache
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.AssemblyInfoInputs.cache
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.AssemblyInfo.cs
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.csproj.CoreCompileInputs.cache
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.dll
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\refint\task_1.dll
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.pdb
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\task_1.genruntimeconfig.cache
+C:\Users\aleks\Documents\Learning_IT\Learn_C_Sharp\bootcamp\task_1\obj\Debug\net6.0\ref\task_1.dll
