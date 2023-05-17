@@ -106,13 +106,13 @@ void SortArray(int[] array, int[] HelpArray)
 Console.Clear();
 Console.Write("Введите кол-во элементов массива: ");
 int n = int.Parse(Console.ReadLine()!);
-int[] array = new int[n];
-int[] HelpArray = new int[101];
-InputArray(array);
-Console.WriteLine($"[{string.Join(", ", array)}]");
-ComptetionArray(array, HelpArray);
-SortArray(array, HelpArray);
-Console.WriteLine($"Отсортированный массив: [{string.Join(", ", array)}]");
+// int[] array = new int[n];
+// int[] HelpArray = new int[101];
+// InputArray(array);
+// Console.WriteLine($"[{string.Join(", ", array)}]");
+// ComptetionArray(array, HelpArray);
+// SortArray(array, HelpArray);
+// Console.WriteLine($"Отсортированный массив: [{string.Join(", ", array)}]");
 
 
 /*
